@@ -2,11 +2,11 @@ name: Validate files
 on: push
 jobs:
     validate-file:
-        runs-on: Ubuntu-latest
+        runs-on: ubuntu-latest
 
         steps:
         - name: get-repo-code
-          user: actions/checkout@v4
+          uses: actions/checkout@v4
 
         - name: validate html file
           run: test -f index.html
