@@ -9,7 +9,7 @@ jobs:
           user: actions/checkout@v4
 
         - name: validate html file
-          user: test -f index.html
+          run: test -f index.html
 
         - name: validate js file
-          user: test -f script.js
+          run: test -f script.js
